@@ -1,0 +1,191 @@
+/*==============================
+            CSS RESET
+===============================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: none;
+}
+body {
+    min-height: 100vh;
+}
+/*==============================
+            HEADER
+===============================*/
+header {
+    background-color: #7E30E1;
+    width: 100%;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo a {
+    font-size: 5vmin;
+    color: #F3F8FF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header nav {
+    flex: 1;
+    text-align: right;
+    margin-right: 5em;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+ul li a {
+    padding: 5px 0;
+    font-size: 2vmin;
+    color: white;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+li a:hover {
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+header .btn-donwload-cv {
+    background-color: unset;
+    padding: 15px;
+    border: 3px solid #E26EE5;
+    border-radius: 5px;
+    font-size: 1.5vmin;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+header .btn-donwload-cv:hover {
+    background-color: #E26EE5;
+}
+/*==============================
+            MAIN
+===============================*/
+main section {
+    min-height: 100vh;
+    padding: 10vmin;
+}
+/*==============================
+        MAIN - SECTION HOME
+===============================*/
+main .col-content-home {
+    background-color: #7E30E1;
+    display: flex;
+    align-items: center;
+}
+main .col-content-home .row-content-home {
+    width: 50%;
+}
+.col-content-home .row-1 {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    color: white;
+}
+.col-content-home .row-1 p {
+    font-size: 5vmin;
+}
+.col-content-home .row-1 h1 {
+    font-size: 10vmin;
+}
+.col-content-home .row-1 span {
+    color: #E26EE5;
+    font-weight: bold;
+}
+.col-content-home .row-1 .btn-hire-me {
+    cursor: pointer;
+    background-color: #E26EE5;
+    width: 180px;
+    padding: 18px 0px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #F3F8FF;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    transition: all 100ms ease;
+}
+.col-content-home .row-1 .btn-hire-me:hover {
+    border: 3px solid white;
+}
+.col-content-home .row-1 .btn-hire-me:focus {
+    transform: scale(.9);
+    font-size: 1.25em;
+}
+.col-content-home .row-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.col-content-home .row-2 .wrapper-image-home {
+    position: relative;
+    background: hsla(215, 100%, 98%, 1);
+    background: linear-gradient(360deg, hsla(215, 100%, 98%, 1) 0%, hsla(263, 75%, 78%, 1) 0%, hsla(266, 75%, 54%, 1) 100%);
+    width: 40vmin;
+    min-height: 578px;
+    box-shadow: 5px -3px 20px rgb(48, 47, 47);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.row-2 .wrapper-image-home img {
+    display: block;
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    width: 56vmin;
+}
+
+.row-2 .wrapper-icon-medsos .box-icon-medsos {
+    position: relative;
+    overflow: hidden;
+    z-index: 100000;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #E26EE5;
+    font-size: 2.5em;
+    color: white;
+}
+.box-icon-medsos::before {
+    content: '';
+    display: none;
+    z-index: -1;
+    position: absolute;
+    background-color: #E26EE5;
+    height: 60px;
+    width: 60px;
+}
+@keyframes animate1 {
+    0%,
+    50% {
+        transform: scale(0);
+        border-radius: 0%;
+    }
+    50%,
+    100% {
+        transform: scale(2);
+        border-radius: 100%;
+        background-color: #E26EE5;
+    }
+}
+:has(.box-icon-medsos-1:hover) .box-icon-medsos-1::before,
+:has(.box-icon-medsos-2:hover) .box-icon-medsos-2::before,
+:has(.box-icon-medsos-3:hover) .box-icon-medsos-3::before,
+:has(.box-icon-medsos-4:hover) .box-icon-medsos-4::before{
+    display: block;
+    animation: animate1 1s ease-out forwards;
+}
