@@ -15,7 +15,7 @@ img {
 }
 body {
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 /*==============================
             HEADER
@@ -34,7 +34,7 @@ header {
     align-items: center;
 }
 header.sticky {
-    padding: 15px 8%;
+    padding: 25px 8%;
 }
 header .logo a {
     font-size: 5vmin;
@@ -153,7 +153,7 @@ main .col-content-home .row-content-home {
     position: relative;
     background: hsla(215, 100%, 98%, 1);
     background: linear-gradient(360deg, hsla(215, 100%, 98%, 1) 0%, hsla(263, 75%, 78%, 1) 0%, hsla(266, 75%, 54%, 1) 100%);
-    width: 40vmin;
+    width: 400px;
     min-height: 578px;
     box-shadow: 5px -3px 20px rgb(48, 47, 47);
     border-top-left-radius: 50px;
@@ -164,9 +164,8 @@ main .col-content-home .row-content-home {
     position: absolute;
     right: -100px;
     bottom: 0;
-    width: 56vmin;
+    width: 140%;
 }
-
 .row-2 .wrapper-icon-medsos .box-icon-medsos {
     position: relative;
     overflow: hidden;
@@ -225,8 +224,9 @@ main .col-content-about .row-content-about.row-1 {
 }
 .col-content-about .row-content-about.row-1 .wrapper-image-about {
     position: relative;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    min-width: 400px;
+    height: 800px;
     border: 3px solid #E26EE5;
     border-top-left-radius: 10px;
     border-top-right-radius: 50px;
@@ -505,7 +505,7 @@ main .col-content-works {
     align-items: center;
     gap: 10px;
 }
-.box-wrapper-myskill .box-value-skill span{
+.box-wrapper-myskill .box-value-skill span {
     font-weight: bold;
     color: #7E30E1;
 }
@@ -521,7 +521,7 @@ main .col-content-works {
 .box-wrapper-myskill .box-value-skill .inner-box {
     overflow: hidden;
     content: '';
-    display:block;
+    display: block;
     position: absolute;
     border-radius: 10px;
     left: 0;
@@ -532,7 +532,7 @@ main .col-content-works {
 }
 .box-wrapper-myskill .box-value-skill .inner-box::before {
     content: '';
-    display:block;
+    display: block;
     position: absolute;
     left: -10px;
     bottom: 0;
@@ -544,119 +544,121 @@ main .col-content-works {
     width: 70px;
 }
 @keyframes animateskill1 {
-    0%, 50%{
+    0%,
+    50% {
         left: -10px;
     }
-    50%, 100%{
+    100%,
+    50% {
         left: 500px;
     }
 }
-.box-value-1 .inner-box::before{
-    animation: animateskill1 8s linear infinite both;
+.box-value-1 .inner-box::before {
+    animation: animateskill1 10s linear infinite both;
 }
-.box-value-2 .inner-box::before{
-    animation: animateskill1 8s linear infinite both;
-    animation-delay: .5s;
+.box-value-2 .inner-box::before {
+    animation: animateskill1 10s linear infinite both;
+    animation-delay: -1.5s;
 }
-.box-value-3 .inner-box::before{
-    animation: animateskill1 8s linear infinite both;
-    animation-delay: .20s;
+.box-value-3 .inner-box::before {
+    animation: animateskill1 10s linear infinite both;
+    animation-delay: 1.5s;
 }
-.box-value-4 .inner-box::before{
-    animation: animateskill1 8s linear infinite both;
-    animation-delay: .40s;
+.box-value-4 .inner-box::before {
+    animation: animateskill1 10s linear infinite both;
+    animation-delay: -1s;
 }
-.box-value-5 .inner-box::before{
-    animation: animateskill1 5s linear infinite both;
+.box-value-5 .inner-box::before {
+    animation: animateskill1 10s linear infinite both;
     animation-delay: 1s;
 }
-.box-value-1 .inner-box{
+.box-value-1 .inner-box {
     width: 85%;
 }
-.box-value-2 .inner-box{
+.box-value-2 .inner-box {
     width: 95%;
 }
-.box-value-3 .inner-box{
+.box-value-3 .inner-box {
     width: 90%;
 }
-.box-value-4 .inner-box{
+.box-value-4 .inner-box {
     width: 75%;
 }
-.box-value-5 .inner-box{
+.box-value-5 .inner-box {
     width: 80%;
 }
-.row-wrapper-content .wrapper-mycerti{
-    padding: 1.5vmin 0px;
+.row-wrapper-content .wrapper-mycerti {
+    padding: 1.5vmin 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
 }
-.row-wrapper-content .wrapper-mycerti .box-wrapper-mycertificate{
+.row-wrapper-content .wrapper-mycerti .box-wrapper-mycertificate {
     background-color: #E26EE5;
     min-width: 350px;
-    min-height: 200px; 
+    min-height: 200px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(102, 102, 102);
     background-position: center;
     background-size: cover;
 }
-.box-wrapper-mycertificate:nth-of-type(1){
-    background:url("/assets/image/certificate1.jpg") no-repeat;
+.box-wrapper-mycertificate:nth-of-type(1) {
+    background: url("/assets/image/certificate1.jpg") no-repeat;
 }
-.box-wrapper-mycertificate:nth-of-type(2){
-    background:url("/assets/image/certificate2.jpg") no-repeat;
+.box-wrapper-mycertificate:nth-of-type(2) {
+    background: url("/assets/image/certificate2.jpg") no-repeat;
 }
-.box-wrapper-mycertificate:nth-of-type(3){
-    background:url("/assets/image/certificate3.webp") no-repeat;
+.box-wrapper-mycertificate:nth-of-type(3) {
+    background: url("/assets/image/certificate3.webp") no-repeat;
 }
-.box-wrapper-mycertificate:nth-of-type(4){
-    background:url("/assets/image/certificate4.webp") no-repeat;
+.box-wrapper-mycertificate:nth-of-type(4) {
+    background: url("/assets/image/certificate4.webp") no-repeat;
 }
 /*==============================
      MAIN - SECTION WORKS
        SUB MY EDUCATION
 ===============================*/
-.col-content-works .col-works-3{
+.col-content-works .col-works-3 {
     margin: 0;
     display: flex;
     flex-flow: row nowrap;
     gap: 10px;
-    min-height: 100vh;
-} 
-.col-works-3 .row-edu-1{
+    min-height: 80vh;
+}
+.col-works-3 .row-edu-1 {
     flex-basis: 40%;
     background: url("/assets/image/bg-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.col-works-3 .row-edu-2{
+.col-works-3 .row-edu-2 {
     flex-basis: 60%;
     padding: 6vmin 4vmin;
     display: flex;
     flex-flow: column nowrap;
     gap: 3vmin;
 }
-.col-works-3 .row-edu-2 h1{
+.col-works-3 .row-edu-2 h1 {
     font-size: 5vmin;
     text-transform: uppercase;
     color: #7E30E1;
 }
-.col-works-3 .row-edu-2 p{
+.col-works-3 .row-edu-2 p {
     font-size: 2vmin;
 }
-.col-works-3 .row-edu-2 .wrapper-content-edu{
+.col-works-3 .row-edu-2 .wrapper-content-edu {
     max-width: 550px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     margin-bottom: 3vmin;
 }
-.row-edu-2 .wrapper-content-edu .icon-box-edu{
+.row-edu-2 .wrapper-content-edu .icon-box-edu {
     width: 15%;
 }
-.wrapper-content-edu .icon-box-edu .box-icon-edu{
+.wrapper-content-edu .icon-box-edu .box-icon-edu {
     width: 60px;
     height: 60px;
     background-color: #E26EE5;
@@ -665,23 +667,131 @@ main .col-content-works {
     justify-content: center;
     align-items: center;
 }
-.icon-box-edu .box-icon-edu img{
+.icon-box-edu .box-icon-edu img {
     width: 40px;
     display: block;
 }
-.row-edu-2 .wrapper-content-edu .history-box-edu{
+.row-edu-2 .wrapper-content-edu .history-box-edu {
     width: 85%;
 }
-.wrapper-content-edu .history-box-edu h3{
+.wrapper-content-edu .history-box-edu h3 {
     font-size: 2vmin;
     color: #E26EE5;
 }
-.wrapper-content-edu .history-box-edu span{
+.wrapper-content-edu .history-box-edu span {
     font-size: 1.5vmin;
     color: #E26EE5;
     display: block;
     margin-bottom: 10px;
 }
-.wrapper-content-edu .history-box-edu p{
+.wrapper-content-edu .history-box-edu p {
     font-size: 1em;
+}
+/*==============================
+      LAYOUT DEVICE TABLE
+===============================*/
+@media screen and (min-width: 850px) and (max-width: 1300px) {
+    /*==============================
+            HEADER
+===============================*/
+    header {
+        padding: 50px 6%;
+        transition: 0.5s;
+    }
+    header.sticky {
+        padding: 25px 6%;
+        transition: 0.5s;
+    }
+    header .logo a {
+        font-size: 4vmin;
+        transition: 0.5s;
+    }
+    ul li a {
+        font-size: 3vmin;
+    }
+    header nav {
+        display: none;
+    }
+    header .btn-donwload-cv {
+        background-color: unset;
+        padding: 13px 12px;
+        border: 3px solid #E26EE5;
+        border-radius: 5px;
+        font-size: 2.5vmin;
+        font-weight: bold;
+        color: white;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: background-color 0.5s ease-out;
+    }
+    /*==============================
+        MAIN - SECTION
+===============================*/
+    main section {
+        padding: 10vmin 8vmin 5vmin;
+    }
+    /*==============================
+        MAIN - SECTION HOME
+===============================*/
+    main .col-content-home {
+        display: flex;
+        flex-flow: column;
+        gap: 8vmin;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .col-content-home .row-content-home {
+        width: 100%;
+    }
+    .col-content-home .row-2 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3vmin;
+    }
+    .row-2 .wrapper-icon-medsos {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2vmin;
+    }
+    /*==============================
+        MAIN - SECTION ABOUT
+===============================*/
+    main .col-content-about {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 50px;
+    }
+    main .col-content-about .row-content-about.row-1 {
+        flex-basis: 100%;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .col-content-about .row-content-about.row-2 {
+        flex-basis: 100%;
+        order: 1;
+    }
+    .col-content-about .row-content-about.row-1 .wrapper-image-about {
+        position: relative;
+        width: 500px;
+        max-width: 200px;
+        height: 800px;
+    }
+    .row-content-about.row-1 .wrapper-image-about img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 450px;
+    }
+    /*==============================
+        MAIN - SECTION MY WORKS
+===============================*/
+    .col-works-2 .wrapper-content-works .sub-wrapper-content-works {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
