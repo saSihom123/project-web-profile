@@ -3,10 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link
-            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-            rel='stylesheet'>
+        <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
             rel="preconnect"
@@ -15,267 +12,221 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet">
-        <title>TEMPLATE WEB PROFILE I - SALOMO PROJECT</title>
+        <!-- BOXICON CSS -->
+        <link
+            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <!-- STYLE CSS -->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <title>TEMPLATE WEB PROFILE - SALOMO PROJECT WEB</title>
     </head>
     <body>
-        <!----------------------------------------->
-        <!-- HEADRER -->
-        <!----------------------------------------->
         <header>
-            <div class="logo">
-                <a href="#">Logo.</a>
+            <div class="logo-text">
+                <a href="#">SLo.</a>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">home</a>
-                    </li>
-                    <li>
-                        <a href="#about">about</a>
-                    </li>
-                    <li>
-                        <a href="#works">works</a>
-                    </li>
-                    <li>
-                        <a href="#">service</a>
-                    </li>
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
-                </ul>
+            <nav class="navbar">
+                <a href="#home" class="active">home</a>
+                <a href="#about">about</a>
+                <a href="#works">works</a>
+                <a href="#">service</a>
+                <a href="#">contact</a>
             </nav>
-            <button class="btn-donwload-cv">download resume</button>
+            <a href="" class="btn">Donwload CV</a>
         </header>
-        <main>
-            <!----------------------------------------->
-            <!-- SECTION HOME -->
-            <!----------------------------------------->
-            <section class="container-content col-content-home" id="home">
-                <div class="row-content-home row-1">
-                    <p>Hi... I'm</p>
-                    <h1>Salomo
-                        <br>Sihombing</h1>
-                    <p>A passionate
-                        <span>Software Developer</span></p>
-                    <button class="btn-hire-me">Hire me</button>
+        <!-- START Section - Sub Section Home -->
+        <section class="home-container" id="home">
+            <div class="sub-container-home text-home">
+                <h3>Hi I'm</h3>
+                <h1>salomo sihombing</h1>
+                <h3>a passionate
+                    <span>web designer</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dicta
+                    eos inventore tenetur hic, est placeat ratione voluptate quidem adipisci fugit
+                    exercitationem id! Itaque enim qui maxime ab labore est.</p>
+                <button class="btn">Hire Me...!</button>
+            </div>
+            <div class="sub-container-home img-home">
+                <div class="box-img-home">
+                    <img src="/assets/image/bg-1.png" alt="">
                 </div>
-                <div class="row-content-home row-2">
-                    <div class="wrapper-image-home">
-                        <img src="/assets/image/bg-1.png" alt="">
-                    </div>
-                    <div class="wrapper-icon-medsos">
-                        <div class="box-icon-medsos box-icon-medsos-1">
-                            <i class='bx bxl-instagram-alt'></i>
-                        </div>
-                        <div class="box-icon-medsos box-icon-medsos-2">
-                            <i class='bx bxl-facebook'></i>
-                        </div>
-                        <div class="box-icon-medsos box-icon-medsos-3">
-                            <i class='bx bxl-linkedin'></i>
-                        </div>
-                        <div class="box-icon-medsos box-icon-medsos-4">
-                            <i class='bx bxl-twitter'></i>
-                        </div>
-                    </div>
+                <div class="box-medsos-home">
+                    <a href="#">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
                 </div>
-            </section>
-            <!----------------------------------------->
-            <!-- SECTION ABOUT -->
-            <!----------------------------------------->
-            <section class="container-content col-content-about" id="about">
-                <div class="row-content-about row-1">
-                    <div class="wrapper-image-about">
-                        <img src="/assets/image/bg2.png" alt="">
-                    </div>
+            </div>
+        </section>
+        <!-- FINISH Section - Sub Section Home -->
+        <!-- START Section - Sub Section About -->
+        <section class="about-container" id="about">
+            <div class="sub-container-about img-about">
+                <div class="box-img-about">
+                    <img src="/assets/image/bg2.png">
                 </div>
-                <div class="row-content-about row-2">
-                    <h1>about me</h1>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda omnis
-                        sapiente saepe sint, fuga dicta dignissimos quae, incidunt distinctio,
-                        repellendus doloremque. Voluptatibus ea nesciunt molestias maiores ullam
-                        explicabo vero? Officia. Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Assumenda omnis sapiente saepe sint, fuga dicta dignissimos quae, incidunt
-                        distinctio, repellendus doloremque. Voluptatibus ea nesciunt molestias maiores
-                        ullam explicabo vero? Officia. Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Assumenda omnis sapiente saepe sint, fuga dicta dignissimos
-                        quae, incidunt distinctio, repellendus doloremque. Voluptatibus ea nesciunt
-                        molestias maiores ullam explicabo vero? Officia.</p>
-                    <button class="btn-donwload-cv">download resume</button>
-                </div>
-            </section>
-            <!----------------------------------------->
-            <!-- SECTION WORKS -->
-            <!----------------------------------------->
-            <section class="container-content col-content-works" id="works">
-                <div class="sub-col-content col-works-1">
-                    <h1>my project</h1>
-                    <p>" several project that i have worked on "</p>
-                    <hr>
-                    <div class="wrapper-box-certificate">
-                        <div class="box-certificate">
-                            <div class="box-swape-certificate">
-                                <a href="#">Click Me!</a>
-                            </div>
-                        </div>
-                        <div class="box-certificate">
-                            <div class="box-swape-certificate">
-                                <a href="#">Click Me!</a>
-                            </div>
-                        </div>
-                        <div class="box-certificate">
-                            <div class="box-swape-certificate">
-                                <a href="#">Click Me!</a>
-                            </div>
-                        </div>
-                        <div class="box-certificate">
-                            <div class="box-swape-certificate">
-                                <a href="#">Click Me!</a>
-                            </div>
-                        </div>
-                        <div class="box-certificate">
-                            <div class="box-swape-certificate">
-                                <a href="#">Click Me!</a>
-                            </div>
-                        </div>
-                        <div class="box-certificate">
-                            <div class="box-swape-certificate">
-                                <a href="#">Click Me!</a>
-                            </div>
+            </div>
+            <div class="sub-container-about text-about">
+                <h2 class="heading">about me</h2>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab numquam
+                    magni incidunt quia. Deleniti possimus commodi, doloribus, qui dicta placeat
+                    eius, numquam minus id totam ut corrupti consequatur perspiciatis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim
+                    quibusdam blanditiis neque itaque perspiciatis vero commodi nulla a officia
+                    deserunt debitis facere nam, labore repudiandae esse ratione obcaecati ipsa.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis
+                    accusamus repellat. Nemo voluptatibus, tempore, molestias molestiae commodi nisi
+                    incidunt odio non sed suscipit culpa asperiores repudiandae quidem? Iste,
+                    exercitationem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                    accusamus dignissimos est. Ut, dolorem neque qui pariatur voluptatem quaerat
+                    temporibus sed culpa perspiciatis vero voluptatibus natus expedita soluta animi
+                    corrupti?</p>
+                <a href="#" class="btn">Donwload CV</a>
+            </div>
+        </section>
+        <!-- FINISH Section - Sub Section About -->
+        <!-- START Section - Sub Section Works -->
+        <section class="works-container" id="works">
+            <div class="sub-container-about">
+                <h2>My project</h2>
+                <hr>
+                <div class="wrapper-project">
+                    <div class="box-project">
+                        <img src="/assets/image/project-1.jpg">
+                        <div class="layer-project">
+                            <h4>Web Development</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolorum
+                                veniam amet! Ipsum a odio fuga explicabo pariatur, eius minima porro sapiente
+                                illo assumenda id aliquam itaque, fugit delectus rerum?</p>
+                            <a href="#" class="btn">Check!</a>
                         </div>
                     </div>
+                    <div class="box-project">
+                        <img src="/assets/image/project-2.jpg">
+                        <div class="layer-project">
+                            <h4>Software Development</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolorum
+                                veniam amet! Ipsum a odio fuga explicabo pariatur, eius minima porro sapiente
+                                illo assumenda id aliquam itaque, fugit delectus rerum?</p>
+                            <a href="#" class="btn">Check!</a>
+                        </div>
+                    </div>
+                    <div class="box-project">
+                        <img src="/assets/image/project-3.jpg">
+                        <div class="layer-project">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolorum
+                                veniam amet! Ipsum a odio fuga explicabo pariatur, eius minima porro sapiente
+                                illo assumenda id aliquam itaque, fugit delectus rerum?</p>
+                            <a href="#" class="btn">Check!</a>
+                        </div>
+                    </div>
+                    <div class="box-project">
+                        <img src="/assets/image/project-4.jpg">
+                        <div class="layer-project">
+                            <h4>Software Technical</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolorum
+                                veniam amet! Ipsum a odio fuga explicabo pariatur, eius minima porro sapiente
+                                illo assumenda id aliquam itaque, fugit delectus rerum?</p>
+                            <a href="#" class="btn">Check!</a>
+                        </div>
+                    </div>
+                    <div class="box-project">
+                        <img src="/assets/image/project-5.jpg">
+                        <div class="layer-project">
+                            <h4>Website Branding</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolorum
+                                veniam amet! Ipsum a odio fuga explicabo pariatur, eius minima porro sapiente
+                                illo assumenda id aliquam itaque, fugit delectus rerum?</p>
+                            <a href="#" class="btn">Check!</a>
+                        </div>
+                    </div>
+                    <div class="box-project">
+                        <img src="/assets/image/project-6.jpg">
+                        <div class="layer-project">
+                            <h4>Photo Design</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolorum
+                                veniam amet! Ipsum a odio fuga explicabo pariatur, eius minima porro sapiente
+                                illo assumenda id aliquam itaque, fugit delectus rerum?</p>
+                            <a href="#" class="btn">Check!</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="sub-col-content col-works-2">
-                    <div class="wrapper-content-works">
-                        <h1>MY
-                            <br>
-                            SKILL &
-                            <br>
-                            Certificate</h1>
-                        <hr>
-                        <div class="sub-wrapper-content-works">
-                            <div class="row-wrapper-content row-wrapper-content-works-1">
-                                <h2>MY SKILL</h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum fuga nulla
-                                    magnam, molestiae hic quidem doloribus commodi ipsum aliquid! Dolorum saepe nam
-                                    perspiciatis in praesentium numquam totam mollitia beatae? Placeat.</p>
-                                <div class="wrapper-myskill">
-                                    <div class="box-wrapper-myskill">
-                                        <h3>web development</h3>
-                                        <div class="box-value-skill">
-                                            <div class="box-value box-value-1">
-                                                <div class="inner-box"></div>
-                                            </div>
-                                            <span>85%</span>
-                                        </div>
-                                    </div>
-                                    <div class="box-wrapper-myskill">
-                                        <h3>hardware development</h3>
-                                        <div class="box-value-skill">
-                                            <div class="box-value box-value-2">
-                                                <div class="inner-box"></div>
-                                            </div>
-                                            <span>95%</span>
-                                        </div>
-                                    </div>
-                                    <div class="box-wrapper-myskill">
-                                        <h3>software development</h3>
-                                        <div class="box-value-skill">
-                                            <div class="box-value box-value-3">
-                                                <div class="inner-box"></div>
-                                            </div>
-                                            <span>90%</span>
-                                        </div>
-                                    </div>
-                                    <div class="box-wrapper-myskill">
-                                        <h3>system aplication</h3>
-                                        <div class="box-value-skill">
-                                            <div class="box-value box-value-4">
-                                                <div class="inner-box"></div>
-                                            </div>
-                                            <span>75%</span>
-                                        </div>
-                                    </div>
-                                    <div class="box-wrapper-myskill">
-                                        <h3>Data administration</h3>
-                                        <div class="box-value-skill">
-                                            <div class="box-value box-value-5">
-                                                <div class="inner-box"></div>
-                                            </div>
-                                            <span>80%</span>
-                                        </div>
-                                    </div>
+            </div>
+        </section>
+        <section class="skill-certi-container">
+            <div class="sub-container-skill-certi">
+                <h2>my
+                    <br>
+                    skill
+                    <br>
+                    certificate</h2>
+                <div class="wrapper-skill-certificate">
+                    <div class="wrapper-skill">
+                        <h3>my skill</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="sub-wrapper-skill">
+                            <div class="box-skill">
+                                <span class="text-title-skill">web Development</span>
+                                <div class="sub-box-skill">
+                                    <div class="box-stick-skill"></div>
+                                    <span>85%</span>
                                 </div>
                             </div>
-                            <div class="row-wrapper-content row-wrapper-content-works-1">
-                                <h2>MY CERTIFICATE</h2>
-                                <div class="wrapper-mycerti">
-                                    <div class="box-wrapper-mycertificate"></div>
-                                    <div class="box-wrapper-mycertificate"></div>
-                                    <div class="box-wrapper-mycertificate"></div>
-                                    <div class="box-wrapper-mycertificate"></div>
+                            <div class="box-skill">
+                                <span class="text-title-skill">Hardware Development</span>
+                                <div class="sub-box-skill">
+                                    <div class="box-stick-skill"></div>
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                            <div class="box-skill">
+                                <span class="text-title-skill">Software Development</span>
+                                <div class="sub-box-skill">
+                                    <div class="box-stick-skill"></div>
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                            <div class="box-skill">
+                                <span class="text-title-skill">System Application</span>
+                                <div class="sub-box-skill">
+                                    <div class="box-stick-skill"></div>
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                            <div class="box-skill">
+                                <span class="text-title-skill">Data Administration</span>
+                                <div class="sub-box-skill">
+                                    <div class="box-stick-skill"></div>
+                                    <span>80%</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="sub-col-content col-works-3">
-                    <div class="row-content-edu row-edu-1"></div>
-                    <div class="row-content-edu row-edu-2">
-                        <h1>my education</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aut deserunt
-                            ratione possimus, est sed doloribus in quo, accusamus saepe ad quia quod porro.
-                            Iure eum atque mollitia et expedita?. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Autem aut deserunt ratione possimus, est sed doloribus in quo,
-                            accusamus saepe ad quia quod porro. Iure eum atque mollitia et expedita?</p>
-                        <div class="wrapper-content-edu">
-                            <div class="box-edu icon-box-edu">
-                                <div class="box-icon-edu">
-                                    <img src="/assets/image/toga-ico.png">
-                                </div>
-                            </div>
-                            <div class="box-edu history-box-edu">
-                                <h3>Bachelor In Computer Enginering
-                                    <br>University Prima Indonesia</h3>
-                                <span>(2008 - 2011)</span>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <div class="wrapper-content-edu">
-                            <div class="box-edu icon-box-edu">
-                                <div class="box-icon-edu">
-                                    <img src="/assets/image/toga-ico.png">
-                                </div>
-                            </div>
-                            <div class="box-edu history-box-edu">
-                                <h3>Bachelor In Computer Enginering
-                                    <br>University Prima Indonesia</h3>
-                                <span>(2008 - 2011)</span>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <div class="wrapper-content-edu">
-                            <div class="box-edu icon-box-edu">
-                                <div class="box-icon-edu">
-                                    <img src="/assets/image/toga-ico.png">
-                                </div>
-                            </div>
-                            <div class="box-edu history-box-edu">
-                                <h3>Bachelor In Computer Enginering
-                                    <br>University Prima Indonesia</h3>
-                                <span>(2008 - 2011)</span>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            </div>
+                    <div class="wrapper-certificate">
+                        <h3>my skill</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="sub-wrapper-certificate">
+                            <div class="box-certificate"></div>
+                            <div class="box-certificate"></div>
+                            <div class="box-certificate"></div>
+                            <div class="box-certificate"></div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+        <!-- <section class="service-container" id="service"></section> <section
+        class="contact-container" id="contact"></section> -->
     </body>
-    <script>
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0)
-        })
-    </script>
 </html>
